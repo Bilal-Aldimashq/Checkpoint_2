@@ -14,5 +14,14 @@ L'adresse du client étant 172.16.100.50/24, il est sur le réseaux **172.16.100
      ![](https://github.com/Bilal-Aldimashq/Checkpoint_2/blob/main/ressources/Capture%20d%E2%80%99%C3%A9cran%202023-11-17%20%C3%A0%2009.42.22.png)
   - Serveur vers client:
     ![](https://github.com/Bilal-Aldimashq/Checkpoint_2/blob/main/ressources/Capture%20d%E2%80%99%C3%A9cran%202023-11-17%20%C3%A0%2009.43.49.png)
-    
+
+
+## **Q1.3**
+### **Pourquoi le client ne récupère pas la 1ère adresse disponible sur la plage DHCP du serveur ?**   
+
+![](https://github.com/Bilal-Aldimashq/Checkpoint_2/blob/main/ressources/Capture%20d%E2%80%99e%CC%81cran%202023-11-17%20a%CC%80%2010.04.41.png)
+Le client récupère l'adresse 172.16.10.20 car la première adresse IP disponble est celle-ci.  
+Effectivement dans le serveur DHCP, on constate que les plages **172.16.10.1 à 171.16.10.19**, sont éxcluent tout comme les plages 172.16.10.241 à 172.16.10.254.
+![](https://github.com/Bilal-Aldimashq/Checkpoint_2/blob/main/ressources/Capture%20d%E2%80%99e%CC%81cran%202023-11-17%20a%CC%80%2010.06.38.png)
+Il est donc normal que la première adresse IP disponible par le serveur DHCP pour cette étendue soit 172.16.10.20
      
