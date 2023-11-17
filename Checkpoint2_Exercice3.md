@@ -39,8 +39,8 @@ Cette adresse représente la passerelle par défaut. Quand il envoie une requêt
 ## **Q3.7**
 ### **Indiquer parmi tous les ordinateurs du schéma, lesquels vont pouvoir communiquer entre-eux.**
 
-Les ordinateurs PC1, PC3 et PC4 peuvent communiquer entre eux.  
-PC2 est sur un autre réseaux et  PC5 sur un autre également, ils ne peuvent communiquer avec aucun autre PC.
+Les ordinateurs PC1, PC3, PC4 et PC5 peuvent communiquer entre eux.  
+PC2 est sur un autre réseaux et  ne peut  communiquer avec aucun autre PC.
 
 ## **Q3.8**
 ### **Quel ordinateurs peuvent atteindre le réseau 172.16.5.0/24?**
@@ -60,14 +60,27 @@ ________________________
 ## **Fichier 1**  
 ## **Q3.11**
 ### **Sur le paquet N°5, quelle est l'adresse mac du matériel qui initialise la communication ? Déduire le nom du matériel.**
-L'adresse MAC qui initialise la communication est 00:50:79:66:68:00. Son nom est Private_66:68:03   
+L'adresse MAC qui initialise la communication est 00:50:79:66:68:00. Son nom est PC1.
 
 ## **Q3.12**
 ### **Est-ce que la communication enregistrée dans cette capture a réussi?**
-La communication à réussi, la ligne 6 indique que c'est une réponse à ligne 5. Il s'agit d'un ping entre deux machines.
+La communication à réussi, la ligne 6 indique que c'est une réponse à ligne 5. Il s'agit d'un ping avec PC4.
 
 ## **Q3.13**
 ### **Dans cette capture, à quel matériel correspond le request et le reply ?**
+Request et reply correpondent à deux machines testant leur communication.
+La machine qui initie la demande (request) est: PC1; Adresse IP: 10.10.4.1; Adresse MAC: 00:50:79:66:68:00.
+La machine qui répond (Reply) est: PC4; Adresse IP: 10.10.4.2; Adresse MAC: 00:50:79:66:68:03.
 
+## **Q3.14**
+### **Dans le paquet N°2, quel est le protocole encapsulé ? Quel est son rôle ?**
+Il s'agit du protocol **ARP**, il associe l'adresse IPV4 à l'adresse MAC.
+
+## **Q3.15**
+### **Quels ont été les rôles des matériels A et B dans cette communication ?**
+Le rôle de A étant un switch, il permet d'interconnecter PC1 et PC4 sans qu'ils soient directement liés entre eux. Il a transferé les paquets sur les ports destinataires qu'il connaît.
+Le rôle de B étant un routeur, Il n'a pas eu besoin d'intervenir dans cette communication car les deux machines sont sur le même réseau.
+
+## **FICHIER 2**
 
 
