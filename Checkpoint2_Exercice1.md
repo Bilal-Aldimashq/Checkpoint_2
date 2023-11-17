@@ -24,4 +24,9 @@ Le client récupère l'adresse 172.16.10.20 car la première adresse IP disponbl
 Effectivement dans le serveur DHCP, on constate que les plages **172.16.10.1 à 171.16.10.19**, sont éxcluent tout comme les plages 172.16.10.241 à 172.16.10.254.
 ![](https://github.com/Bilal-Aldimashq/Checkpoint_2/blob/main/ressources/Capture%20d%E2%80%99e%CC%81cran%202023-11-17%20a%CC%80%2010.06.38.png)
 Il est donc normal que la première adresse IP disponible par le serveur DHCP pour cette étendue soit 172.16.10.20
-     
+
+## **Q1.4**
+### **Est-ce que ce client peut avoir l'adresse IP 172.16.10.15 en DHCP ?**
+Il peut avoir cette adresse en faisant une réservation dans l'onglet _Resevations_ et en indiquant l'adresse 172.16.10.15 et l'adresse MAC du client.
+![](https://github.com/Bilal-Aldimashq/Checkpoint_2/blob/main/ressources/Capture%20d%E2%80%99e%CC%81cran%202023-11-17%20a%CC%80%2010.46.26.png)
+![](https://github.com/Bilal-Aldimashq/Checkpoint_2/blob/main/ressources/Capture%20d%E2%80%99e%CC%81cran%202023-11-17%20a%CC%80%2010.46.47.png)
