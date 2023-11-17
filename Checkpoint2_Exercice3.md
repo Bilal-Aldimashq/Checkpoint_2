@@ -66,4 +66,8 @@ L'adresse MAC qui initialise la communication est 00:50:79:66:68:00. Son nom est
 ### **Est-ce que la communication enregistrée dans cette capture a réussi?**
 La communication à réussi, la ligne 6 indique que c'est une réponse à ligne 5. Il s'agit d'un ping entre deux machines.
 
+## **Q3.13**
+### **Dans cette capture, à quel matériel correspond le request et le reply ?**
+
+
 
