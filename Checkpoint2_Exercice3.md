@@ -36,3 +36,25 @@ Cette adresse représente la passerelle par défaut. Quand il envoie une requêt
 | Adresse de broadcast | 10.10.255.255/16 | 10.11.255.255/16 | 10.11.255.255/15|
 
 
+## **Q3.7**
+### **Indiquer parmi tous les ordinateurs du schéma, lesquels vont pouvoir communiquer entre-eux.**
+
+Les ordinateurs PC1, PC3 et PC4 peuvent communiquer entre eux.  
+PC2 est sur un autre réseaux et  PC5 sur un autre également, ils ne peuvent communiquer avec aucun autre PC.
+
+## **Q3.8**
+### **Quel ordinateurs peuvent atteindre le réseau 172.16.5.0/24?**
+Les PC1, 3, 4 et 5 pourront l'atteindre grâce à la passerelle 10.10.255.254/16
+
+## **Q3.9**
+### **Quel incidence y-a-t'il pour les ordinateurs PC2 et PC3 si on interverti leur ports de connexion sur le matériel A ?**
+Si les ports sont configurés par défaut sur le switch, il n'y aura pas d'incidence.
+En revanche si les VLAN sont séparés sur les ports du switch, PC3 ne pourra plus communiqué avec PC1 et PC4. PC2 étant sur une autre plage d'adresse il ne communiquera toujours pas.
+
+## **Q3.10**
+### **Quelles sont les modifications possible afin de mettre la configuration IP des ordinateurs en dynamique?** 
+Il est possible de configurer un DHCP soit par un routeur ou alors un serveur sur chaque réseau.
+Sinon un seul serveur DHCP mais avec tout les ordinateurs sous le même réseau.
+
+
+
