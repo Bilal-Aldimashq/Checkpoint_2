@@ -4,7 +4,7 @@
 ### **Quel est le matériel réseau A ?**
 C'est un switch, il agit sur la couche 2 du modèle OSI  
 **Quel est son rôle sur ce schéma vis-à-vis des ordinateurs ?**  
-Il permet aux ordinateurs qui sont sur le même réseau de communiquer entre eux ou d'aller vers la passerelle.  
+Il permet aux ordinateurs qui sont sur le même réseau de communiquer entre eux ou vers la passerelle.  
 
 ## **Q3.2**
 ### **Quel est le matériel réseau B ?**
