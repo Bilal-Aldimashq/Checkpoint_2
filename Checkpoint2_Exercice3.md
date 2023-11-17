@@ -8,18 +8,18 @@ Il permet aux ordinateurs qui sont sur le même réseau de communiquer entre eux
 
 ## **Q3.2**
 ### **Quel est le matériel réseau B ?**
-C'est un routeur, il agit sur la couche 3 du modèle OSI
-**Quel est son rôle pour le réseau 10.10.0.0/16 ?**
-Il permet au réseau 10.10.0.0/16 d'envoyer de communiquer avec les réseaux **10.12.2.0/24** et par le biais du routeur R2 de communiquer avec le réseau **172.16.5.0/24.** Il serrt de passerelle.
+C'est un routeur, il agit sur la couche 3 du modèle OSI.  
+**Quel est son rôle pour le réseau 10.10.0.0/16 ?**  
+Il permet au réseau 10.10.0.0/16 d'envoyer de communiquer avec les réseaux **10.12.2.0/24** et par le biais du routeur R2 de communiquer avec le réseau **172.16.5.0/24.** Il sert de passerelle.
 
 ## **Q3.3**
 ### **Que signifie f0/0 et g1/0 sur l’élément B ?**  
-Le f0/0 est le nom de l'interface; C'est l'interface FastEthernet N°0. Elles sont généralement reliées à un switch
+Le f0/0 est le nom de l'interface; C'est l'interface FastEthernet N°0. Elles sont généralement reliées à un switch.  
 Le g1/0 indique que cette interface est une GigaEthernet N°1. Elles sont généralement reliées à un autre routeur.
 
 ## **Q3.4**
 ### **Pour l'ordinateur PC2, que représente /16 dans son adresse IP ?**
-Le /16 représente le masque de réseaux de l'adresse IP, son CIDR. le /16 correspond à 255.255.0.0
+Le /16 représente le masque de réseaux de l'adresse IP, son CIDR. le /16 correspond à 255.255.0.0.
 
 ## **Q3.5**
 ### **Pour ce même ordinateur, que représente l'adresse 10.10.255.254 ?**
@@ -40,7 +40,7 @@ Cette adresse représente la passerelle par défaut. Quand il envoie une requêt
 ### **Indiquer parmi tous les ordinateurs du schéma, lesquels vont pouvoir communiquer entre-eux.**
 
 Les ordinateurs PC1, PC3, PC4 et PC5 peuvent communiquer entre eux.  
-PC2 est sur un autre réseaux et  ne peut  communiquer avec aucun autre PC.
+PC2 est sur un autre réseaux et ne peut communiquer qu'avec PC5.
 
 ## **Q3.8**
 ### **Quel ordinateurs peuvent atteindre le réseau 172.16.5.0/24?**
@@ -80,6 +80,7 @@ Il s'agit du protocol **ARP**, il associe l'adresse IPV4 à l'adresse MAC.
 ### **Quels ont été les rôles des matériels A et B dans cette communication ?**
 Le rôle de A étant un switch, il permet d'interconnecter PC1 et PC4 sans qu'ils soient directement liés entre eux. Il a transferé les paquets sur les ports destinataires qu'il connaît.
 Le rôle de B étant un routeur, Il n'a pas eu besoin d'intervenir dans cette communication car les deux machines sont sur le même réseau.
+
 
 ## **FICHIER 2**
 
