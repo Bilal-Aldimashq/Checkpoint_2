@@ -55,6 +55,15 @@ En revanche si les VLAN sont séparés sur les ports du switch, PC3 ne pourra pl
 ### **Quelles sont les modifications possible afin de mettre la configuration IP des ordinateurs en dynamique?** 
 Il est possible de configurer un DHCP soit par un routeur ou alors un serveur sur chaque réseau.
 Sinon un seul serveur DHCP mais avec tout les ordinateurs sous le même réseau.
+________________________
+# **Analyse de trames**
+## **Fichier 1**  
+## **Q3.11**
+### **Sur le paquet N°5, quelle est l'adresse mac du matériel qui initialise la communication ? Déduire le nom du matériel.**
+L'adresse MAC qui initialise la communication est 00:50:79:66:68:00. Son nom est Private_66:68:03   
 
+## **Q3.12**
+### **Est-ce que la communication enregistrée dans cette capture a réussi?**
+La communication à réussi, la ligne 6 indique que c'est une réponse à ligne 5. Il s'agit d'un ping entre deux machines.
 
 
