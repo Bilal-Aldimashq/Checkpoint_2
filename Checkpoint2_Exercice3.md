@@ -2,13 +2,13 @@
 
 ## **Q3.1**
 ### **Quel est le matériel réseau A ?**
-C'est un switch, il agit sur la couche 2 du modèle OSI  
+C'est un switch, il agit sur la couche 2 du modèle OSI, la couche liaison.   
 **Quel est son rôle sur ce schéma vis-à-vis des ordinateurs ?**  
 Il permet aux ordinateurs qui sont sur le même réseau de communiquer entre eux ou vers la passerelle.  
 
 ## **Q3.2**
 ### **Quel est le matériel réseau B ?**
-C'est un routeur, il agit sur la couche 3 du modèle OSI.  
+C'est un routeur, il agit sur la couche 3 du modèle OSI, la couche réseaux.  
 **Quel est son rôle pour le réseau 10.10.0.0/16 ?**  
 Il permet au réseau 10.10.0.0/16 d'envoyer de communiquer avec les réseaux **10.12.2.0/24** et par le biais du routeur R2 de communiquer avec le réseau **172.16.5.0/24.** Il sert de passerelle.
 
@@ -68,8 +68,8 @@ La communication à réussi, la ligne 6 indique que c'est une réponse à ligne 
 
 ## **Q3.13**
 ### **Dans cette capture, à quel matériel correspond le request et le reply ?**
-Request et reply correpondent à deux machines testant leur communication.
-La machine qui initie la demande (request) est: PC1; Adresse IP: 10.10.4.1; Adresse MAC: 00:50:79:66:68:00.
+Request et reply correpondent à deux machines testant leur communication.  
+La machine qui initie la demande (request) est: PC1; Adresse IP: 10.10.4.1; Adresse MAC: 00:50:79:66:68:00.  
 La machine qui répond (Reply) est: PC4; Adresse IP: 10.10.4.2; Adresse MAC: 00:50:79:66:68:03.
 
 ## **Q3.14**
@@ -81,7 +81,46 @@ Il s'agit du protocol **ARP**, il associe l'adresse IPV4 à l'adresse MAC.
 Le rôle de A étant un switch, il permet d'interconnecter PC1 et PC4 sans qu'ils soient directement liés entre eux. Il a transferé les paquets sur les ports destinataires qu'il connaît.
 Le rôle de B étant un routeur, Il n'a pas eu besoin d'intervenir dans cette communication car les deux machines sont sur le même réseau.
 
+___________________________
 
 ## **FICHIER 2**
+## **Q3.16**
+### **Qui initialise la communication ? Donner l'adresse IP ainsi que le nom du matériel.**
+La machine qui initialise la communication est PC3, son IP est 10.10.80.3
 
+## **Q3.17**
+### **Quel est le protocole encapsulé ? Quel est son rôle ?**
+Le protocol est ICMP. Son rôle est de contrôler les erreurs de transmission et transporter les messages d'erreur vers la machine source afin de lui signaler l'incident.
 
+## **Q3.18**
+### **Est-ce que cette communication a réussi ? Si oui, indique entre quels matériel, si non indique pourquoi cela n'a pas fonctionné.**
+La communication n'a pas fonctionné. Cela est du au fait que PC3 (la source) n'est pas sur le même réseau que PC2 (le destinataire).  
+PC3 a pour adresse IP 10.10.80.3/16.  
+PC2 ayant pour adresse IP 10.11.80.3/16  
+PC3 a donc envoyé vers sa default gateway mais PC2 n'étant pas sur le même réseau que l'interface f0/0 du routeur (10.10.255.254), celui-ci n'a pas pu transmettre le paquet.
+
+## **Q3.19**
+### **Expliquer la ligne du paquet N° 2**
+La ligne 2 indique que le destinataire avec l'adresse IP 10.10.80.2 n'est pas accessible depuis la passerelle 10.10.255.254.
+
+## **Q3.20**
+### **Quels ont été les rôles des matériels A et B ?**
+Le switch A, a fait le lien entre PC3 et le routeur, il a reçu de PC3 un paquet à destination de la default gateway dont il connaît l'interface et l'a transmis.
+Le routeur B, a reçu le paquet en provenance de PC3 pour PC2. Il ne connaît pas l'adresse de PC2 et n'a pas pu le transmettre car le réseau de PC2 ne fait pas partie de sa table de routage, ICMP lui renvoie donc une erreur.
+_____________________________
+
+## **FICHIER 3**
+## **Q3.21**
+### **Dans cette trame, donner les noms et les adresses IP des matériels sources et destination.**
+La source est PC4 et son adresse IP est 10.10.4.2/16.  
+La destination est une machine sur le réseau 172.16.5.0, et son adresse IP est 172.16.5.253. 
+
+## **Q3.22**
+### **Quelles sont les adresses mac source et destination ? Qu'en déduis-tu ?**
+La source a pour adresse MAC ca:03:9e:ef:00:38. 
+la destination a pour adresse MAC ca:01:da:d2:00:1c.
+On peut en déduire qu'il y a des machines connectées au réseaux 172.16.5.0/24 accessible grâce à la table de routage de R2.  
+
+## **Q3.23**
+### **A quel emplacement du réseau a été enregistré cette communication ?**
+Cette communication a été enregistrer entre les 2 routeurs car les addresses de destination ne changent pas, ce qui suggère que les interfaces interrogées connaissent la route des réseaux concernés par cette communication.  
